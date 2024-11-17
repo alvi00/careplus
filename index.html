@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CarePlus</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- DotLottie Player -->
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+        /* This part is for hero section*/
+        /* Default layout for PC */
+        .banner-column {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .banner-text {
+            flex: 1;
+            order: 1;
+        }
+
+        .banner-animation {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            order: 2;
+        }
+
+        .banner-animation dotlottie-player {
+            max-width: 100%;
+            height: auto;
+        }
+
+
+
+        .banner-animation.pc {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            transform: translateX(40px);
+            /* Adjust this value as needed */
+        }
+
+
+        .menu-link {
+            color: #8f8c8c;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .menu-link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 0;
+            height: 2px;
+            background: #007bff;
+            transition: width 0.3s ease;
+        }
+
+        .menu-link:hover::after {
+            width: 100%;
+            /* Underline expands */
+        }
+
+        .menu-link:hover {
+            transform: scale(1.1);
+            /* Slightly increase the size */
+            color: #007bff;
+            text-shadow: 0 0 8px #007bff;
+
+        }
+
+
+        /* Responsive layout for Mobile */
+        @media (max-width: 768px) {
+            .banner-column {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .banner-animation {
+                order: 1;
+                margin-top: 20px;
+            }
+
+            .banner-text {
+                order: 2;
+                /* Move text after animation */
+            }
+
+            .heading-lg {
+                margin-top: 50px;
+            }
+
+        }
+
+
+        /* This part is for knowledge section*/
+
+        .knowledge-section {
+            padding: 60px 15px;
+        }
+
+        .knowledge-heading {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2rem;
+            color: #007bff;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            border: black 2px;
+            transition: transform 0.3s ease, border 0.3s ease;
+            border-radius: 2px;
+            /* Smooth transition for both transform and border */
+
+        }
+
+        .card:hover {
+            transform: scale(1.5);
+            /* Slightly increase the size */
+            border: 3px solid #2a336c;
+            /* Add a solid blue border */
+        }
+
+        .card:hover .btn {
+            color: #ffffff;
+
+            background-color: #2a336c
+        }
+
+        .card:hover .card-title {
+            color: #007bff;
+        }
+
+        .card:hover .card-text {
+            color: #007bff;
+        }
+
+        .card-img-top {
+            order: 1;
+
+            /* Ensures the image comes first */
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            order: 2;
+            background-color: black;
+            /* Ensures the body comes after the image */
+        }
+
+        .card-title {
+            order: 1;
+            text-align: center;
+
+
+            /* Title comes after the image */
+        }
+
+        .card-text {
+            order: 2;
+            text-align: justify;
+
+            /* Text comes after the title */
+        }
+
+        .card .btn {
+            order: 3;
+            background-color: white;
+            /* Button comes last */
+        }
+
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="#" class="brand">
+                <span style="display: flex; align-items: center;">
+                    <img src="assets/favicon.ico" alt="CarePlus Logo"
+                        style="width: 24px; height: 24px; margin-right: 8px;" />
+                    CarePlus
+                </span>
+            </a>
+
+            <div class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+            <div class="menu" id="menu">
+                <ul class="menu-inner">
+                    <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="#knowledge" class="menu-link">Knowledge</a></li>
+                    <li class="menu-item"><a href="#contact" class="menu-link">Contact Us</a></li>
+                </ul>
+            </div>
+            <a href="https://careplusdoctor.vercel.app/" class="menu-block">Appointment</a>
+        </nav>
+    </header>
+    <!-- Main Section -->
+    <main class="main" id="home">
+        <section class="section banner banner-section">
+            <div class="container banner-column">
+                <!-- Lottie Animation only for mobile -->
+                <div class="banner-animation mobile">
+                    <dotlottie-player src="https://lottie.host/60484a40-4143-4d11-b0b0-9a08beed6a7b/tq4VeSlIIO.json"
+                        background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
+                    </dotlottie-player>
+                </div>
+                <!-- Text Content -->
+                <div class="banner-text">
+                    <h1 class="heading-xl">Empowering Women, One Step at a Time</h1>
+                    <p class="paragraph">
+                        Join us in promoting women's health awareness and fostering a community of care. Access reliable
+                        information, resources, and consultations tailored to your needs.
+                    </p>
+                    <button class="btn btn-darken btn-inline">
+                        Learn More<i class="bx bx-right-arrow-alt"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--This part if for knowlege-->
+
+    <!-- Knowledge Section -->
+    <section class="knowledge-section" id="knowledge">
+        <div class="container">
+            <!-- Centered Heading -->
+            <h2 class="knowledge-heading">Explore the Stages of Women's Health</h2>
+
+            <!-- Responsive Cards -->
+            <div class="row">
+                <!-- Infancy Card -->
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card card-img-top" style="width: 100%;">
+                        <img src="assets/lock.jpg" class="card-img-top" alt="Infancy">
+                        <div class="card-body">
+                            <h5 class="card-title">Infancy</h5>
+                            <p class="card-text">A critical stage of growth and development that sets the foundation for
+                                health.</p>
+                            <a href="#" class="btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Puberty Card -->
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card card-img-top" style="width: 100%;">
+                        <img src="assets/lock.jpg" class="card-img-top" alt="Puberty">
+                        <div class="card-body">
+                            <h5 class="card-title">Puberty</h5>
+                            <p class="card-text">The stage of life when a child's body begins to develop into an adult
+                                body and grow in life.</p>
+                            <a href="#" class="btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adolescence Card -->
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card card-img-top" style="width: 100%;">
+                        <img src="assets/lock.jpg" class="card-img-top" alt="Adolescence">
+                        <div class="card-body">
+                            <h5 class="card-title">Adolescence</h5>
+                            <p class="card-text">A pivotal phase of growth with significant physical, emotional, and
+                                mental changes.</p>
+                            <a href="#" class="btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adulthood Card -->
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card card-img-top" style="width: 100%;">
+                        <img src="assets/lock.jpg" class="card-img-top" alt="Adulthood">
+                        <div class="card-body">
+                            <h5 class="card-title">Adulthood</h5>
+                            <p class="card-text">A phase where individuals experience stability and focus on long-term
+                                goals and work toward goal.</p>
+                            <a href="#" class="btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reproductive Age Card -->
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card card-img-top" style="width: 100%;">
+                        <img src="assets/lock.jpg" class="card-img-top" alt="Reproductive Age">
+                        <div class="card-body">
+                            <h5 class="card-title">Reproductive Age</h5>
+                            <p class="card-text">A significant stage in women's health focusing on fertility and
+                                hormonal balance.</p>
+                            <a href="#" class="btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Climacteric and Post-Climacteric Card -->
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card card-img-top" style="width: 100%;">
+                        <img src="assets/lock.jpg" class="card-img-top" alt="Climacteric Periods">
+                        <div class="card-body">
+                            <h5 class="card-title">Climacteric Periods</h5>
+                            <p class="card-text">A phase marking the end of reproductive years, with various
+                                physiological changes.</p>
+                            <a href="#" class="btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!--This part is for the contact us part-->
+
+    <section id="contact-us" class="section contact-us-section">
+
+        <div class="container" id="contact">
+            <h2 class="heading-lg text-center">Contact Us</h2>
+            <p class="text-center">We'd love to hear from you. Please reach out to us for any inquiries or feedback.</p>
+
+            <div class="row">
+                <!-- Contact Form -->
+                <dotlottie-player src="https://lottie.host/d63be08c-441e-42ad-a724-5e8470eea2ec/iKStwmVOGK.json"
+                    background="transparent" speed="1" style="width: 500px; height: 500px;" loop autoplay
+                    class="contact-us-svg">
+                </dotlottie-player>
+                <div class="col-md-6">
+                    <form action="#Contact-us" method="POST" class="contact-form">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Your message here"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- This for footer-->
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <!-- About Section -->
+            <div class="col-md-4">
+                <h5>About CarePlus</h5>
+                <p>CarePlus is dedicated to empowering individuals with healthcare knowledge and resources. Join us to make a difference in the community.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-4">
+                <h5>Quick Links</h5>
+                <ul class="footer-links">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#knowledge">Knowledge</a></li>
+                    <li><a href="#contact-us">Contact Us</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="col-md-4">
+                <h5>Contact Us</h5>
+                <p><strong>Phone:</strong> +123 456 7890</p>
+                <p><strong>Email:</strong> info@careplus.com</p>
+                <p><strong>Follow Us:</strong></p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-github"></i></i></a>
+                    <a href="#" class="social-link"><i class="fa-solid fa-envelope-open-text"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom text-center">
+            <p>&copy; 2024 CarePlus. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
