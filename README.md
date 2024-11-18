@@ -1,11 +1,6 @@
 # Project Proposal
 
-Titleoftheproject: **Careplus**
-GroupmembernameandID:
-Coursecodeandname:
-Supervisornameanddesignation:
-DepartmentnameandUniversityname:
-SubmissionDate:
+
 
 ## 1. Background study of the research topic including significance of the
 
