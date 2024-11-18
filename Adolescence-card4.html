@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Risks and Coping Strategies During Adolescence</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        .list-group-item {
+            color: white;
+        }
+
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        .banner-column {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .banner-text {
+            flex: 1;
+            order: 1;
+        }
+
+        .banner-animation {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            order: 2;
+        }
+
+        .banner-animation.dotlottie-player {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .banner-animation.pc {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            transform: translateX(40px);
+        }
+
+        .menu-link {
+            color: #8f8c8c;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .menu-link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 0;
+            height: 2px;
+            background: #007bff;
+            transition: width 0.3s ease;
+        }
+
+        .menu-link:hover::after {
+            width: 100%;
+        }
+
+        .menu-link:hover {
+            transform: scale(1.1);
+            color: #007bff;
+            text-shadow: 0 0 8px #007bff;
+        }
+
+        @media (max-width: 768px) {
+            .banner-column {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .banner-animation {
+                order: 1;
+                margin-top: 20px;
+            }
+
+            .banner-text {
+                order: 2;
+            }
+
+            .heading-lg {
+                margin-top: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="Adolescence.html" class="brand">
+                <span style="display: flex; align-items: center;">
+                    <img src="assets/favicon.ico" alt="CarePlus Logo" style="width: 24px; height: 24px; margin-right: 8px;" />
+                    CarePlus
+                </span>
+            </a>
+    
+            <div class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+            <div class="menu" id="menu">
+                <ul class="menu-inner">
+                    <li class="menu-item"><a href="adolescence.html" class="menu-link">Go Back</a></li>
+                </ul>
+            </div>
+            <a href="https://careplusdoctor.vercel.app/" class="menu-block">Appointment</a>
+        </nav>
+    </header>
+
+    <section class="section banner banner-section">
+        <div class="bg-dark text-light p-3">
+            <div class="container text-center">
+                <h1 class="display-4">Health Risks and Coping Strategies During Adolescence</h1>
+                <p class="lead">Explore common health challenges faced by young women and learn strategies to overcome them for a healthier adolescence.</p>
+            </div>
+        </div>
+     </section>
+
+    <main class="py-4">
+        <div class="container">
+            <section class="mb-5">
+                <h2 class="text-primary">Introduction</h2>
+                <p>Adolescence is a critical time for addressing health risks. Young women often face unique challenges, including nutritional deficits, hormonal changes, and mental health struggles. Awareness and proactive strategies are key to maintaining well-being.</p>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="text-primary">Common Health Risks</h2>
+                <table class="bg-dark table table-striped table-bordered">
+                    <thead class="table-dark bg-dark">
+                        <tr>
+                            <th>Risk</th>
+                            <th>Impact</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-dark">
+                        <tr>
+                            <td>Iron-Deficiency Anemia</td>
+                            <td>Fatigue, dizziness, and reduced academic performance.</td>
+                        </tr>
+                        <tr>
+                            <td>Menstrual Health Issues</td>
+                            <td>Painful periods, irregular cycles, and hormonal imbalances.</td>
+                        </tr>
+                        <tr>
+                            <td>Eating Disorders</td>
+                            <td>Unhealthy weight loss or gain, body dysmorphia, and long-term health risks.</td>
+                        </tr>
+                        <tr>
+                            <td>Mental Health Challenges</td>
+                            <td>Anxiety, depression, and stress due to academic and social pressures.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="text-primary">Coping Strategies</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-group">
+                            <li class="list-group-item bg-dark">Ensure a balanced diet rich in iron, calcium, and essential vitamins.</li>
+                            <li class="list-group-item bg-dark">Stay active with regular exercise to promote physical and mental health.</li>
+                            <li class="list-group-item bg-dark">Maintain open communication with parents and healthcare providers.</li>
+                            <li class="list-group-item bg-dark">Practice stress management techniques like mindfulness and journaling.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="text-primary">Addressing Menstrual Health</h2>
+                <p>Understanding menstrual health is essential. Regular checkups and open discussions can help manage pain and irregularities effectively. Hygiene practices should also be emphasized to prevent infections.</p>
+            </section>
+
+            <section>
+                <h2 class="text-primary">Seeking Support</h2>
+                <p>Young women should feel empowered to seek help when faced with health challenges. Here's how:</p>
+                <ol>
+                    <li>Speak to a gynecologist about any menstrual irregularities.</li>
+                    <li>Join support groups for shared experiences and advice.</li>
+                    <li>Use reliable health resources to stay informed.</li>
+                </ol>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-light py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 CarePlus. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

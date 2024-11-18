@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psychological Effects During Puberty</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        .list-group-item{
+            color: white;
+        }
+    
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        .banner-column {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .banner-text {
+            flex: 1;
+            order: 1;
+        }
+
+        .banner-animation {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            order: 2;
+        }
+
+        .banner-animation dotlottie-player {
+            max-width: 100%;
+            height: auto;
+        }
+
+
+
+        .banner-animation.pc {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            transform: translateX(40px);
+            /* Adjust this value as needed */
+        }
+
+
+        .menu-link {
+            color: #8f8c8c;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .menu-link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 0;
+            height: 2px;
+            background: #007bff;
+            transition: width 0.3s ease;
+        }
+
+        .menu-link:hover::after {
+            width: 100%;
+            /* Underline expands */
+        }
+
+        .menu-link:hover {
+            transform: scale(1.1);
+            /* Slightly increase the size */
+            color: #007bff;
+            text-shadow: 0 0 8px #007bff;
+
+        }
+
+
+        /* Responsive layout for Mobile */
+        @media (max-width: 768px) {
+            .banner-column {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .banner-animation {
+                order: 1;
+                margin-top: 20px;
+            }
+
+            .banner-text {
+                order: 2;
+                /* Move text after animation */
+            }
+
+            .heading-lg {
+                margin-top: 50px;
+            }
+
+        }
+        
+    </style>
+    
+</head>
+<body>
+
+    
+        <!-- Header Section -->
+        <header class="header" id="header">
+            <nav class="navbar container">
+                <a href="puberty.html" class="brand">
+                    <span style="display: flex; align-items: center;">
+                        <img src="assets/favicon.ico" alt="CarePlus Logo"
+                            style="width: 24px; height: 24px; margin-right: 8px;" />
+                        CarePlus
+                    </span>
+                </a>
+    
+                <div class="burger" id="burger">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </div>
+                <div class="menu" id="menu">
+                    <ul class="menu-inner">
+                        <li class="menu-item"><a href="puberty.html" class="menu-link">Go Back</a></li>
+                    </ul>
+                </div>
+                <a href="https://careplusdoctor.vercel.app/" class="menu-block">Appointment</a>
+            </nav>
+        </header>
+
+
+    <!-- Header Section -->
+     <section class="section banner banner-section">
+        <div class="bg-dark text-light p-3">
+            <div class="container text-center">
+                <h1 class="display-4">Psychological Effects During Puberty</h1>
+                <p class="lead">Understanding the mental and emotional changes, their causes, and ways to cope effectively.</p>
+            </div>
+        </div>
+     </section>
+
+
+    <!-- Main Content -->
+    <main class="py-4">
+        <div class="container">
+            <!-- Section: Introduction -->
+            <section class="mb-5">
+                <h2 class="text-primary">Introduction</h2>
+                <p>Puberty is a significant phase of life marked by rapid physical and psychological development. This period often brings emotional turbulence, identity exploration, and cognitive changes, making it crucial to understand and address these aspects.</p>
+            </section>
+
+            <!-- Section: Causes and Effects -->
+            <section class="mb-5">
+                <h2 class="text-primary">Causes and Effects</h2>
+                <table class=" bg-dark table table-striped table-bordered">
+                    <thead class="table-dark bg-dark">
+                        <tr>
+                            <th>Cause</th>
+                            <th>Psychological Effect</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-dark">
+                        <tr>
+                            <td>Hormonal Changes</td>
+                            <td>Mood swings, heightened emotions, and increased irritability.</td>
+                        </tr>
+                        <tr>
+                            <td>Peer Pressure</td>
+                            <td>Stress, anxiety, and a tendency to conform to societal norms.</td>
+                        </tr>
+                        <tr>
+                            <td>Identity Formation</td>
+                            <td>Confusion about self-identity, leading to introspection or rebellion.</td>
+                        </tr>
+                        <tr>
+                            <td>Academic Pressure</td>
+                            <td>Fear of failure, reduced self-esteem, and burnout.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Section: Preventive Measures -->
+            <section class="mb-5">
+                <h2 class="text-primary">Preventive Measures</h2>
+                <div class="row ">
+                    <div class="col-md-6 ">
+                        <ul class="list-group">
+                            <li class="list-group-item bg-dark">Encourage open communication with parents and teachers.</li>
+                            <li class="list-group-item bg-dark">Promote mindfulness activities like meditation or yoga.</li>
+                            <li class="list-group-item bg-dark">Foster a supportive peer group environment.</li>
+                            <li class="list-group-item bg-dark">Seek professional counseling if emotional distress persists.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section: Detailed Explanation -->
+            <section class="mb-5">
+                <h2 class="text-primary">Detailed Explanation</h2>
+                <p><strong>Hormonal Changes:</strong> The surge in hormones like estrogen and testosterone can trigger emotional instability, leading to mood swings and irritability.</p>
+                <p><strong>Social Challenges:</strong> Puberty often introduces societal expectations, which may create a conflict between individuality and conformity.</p>
+                <p><strong>Development of Abstract Thinking:</strong> Adolescents start to analyze complex ideas, leading to overthinking and existential questions.</p>
+            </section>
+
+            <!-- Section: How to Seek Help -->
+            <section>
+                <h2 class="text-primary">How to Seek Help</h2>
+                <p>Adolescents facing psychological challenges during puberty should not hesitate to seek help. Here are some steps:</p>
+                <ol>
+                    <li>Talk to a trusted adult such as a parent or teacher.</li>
+                    <li>Engage with school counselors or therapists.</li>
+                    <li>Join peer support groups to share experiences and find solidarity.</li>
+                </ol>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 CarePlus. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

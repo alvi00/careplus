@@ -36,3 +36,10 @@ window.addEventListener("resize", () => {
   }
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  const learnMoreButton = document.querySelector('.card .btn');
+
+  learnMoreButton.addEventListener('click', () => {
+      window.location.href = 'puberty.html'; // Redirect to the desired page
+  });
+});

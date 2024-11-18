@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseases & Taboos During Puberty</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        .list-group-item{
+            color: white;
+        }
+    
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        .banner-column {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .banner-text {
+            flex: 1;
+            order: 1;
+        }
+
+        .banner-animation {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            order: 2;
+        }
+
+        .banner-animation dotlottie-player {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .banner-animation.pc {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            transform: translateX(40px);
+        }
+
+        .menu-link {
+            color: #8f8c8c;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .menu-link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 0;
+            height: 2px;
+            background: #007bff;
+            transition: width 0.3s ease;
+        }
+
+        .menu-link:hover::after {
+            width: 100%;
+        }
+
+        .menu-link:hover {
+            transform: scale(1.1);
+            color: #007bff;
+            text-shadow: 0 0 8px #007bff;
+        }
+
+        @media (max-width: 768px) {
+            .banner-column {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .banner-animation {
+                order: 1;
+                margin-top: 20px;
+            }
+
+            .banner-text {
+                order: 2;
+            }
+
+            .heading-lg {
+                margin-top: 50px;
+            }
+        }
+        
+    </style>
+    
+</head>
+<body>
+
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="puberty.html" class="brand">
+                <span style="display: flex; align-items: center;">
+                    <img src="assets/favicon.ico" alt="CarePlus Logo" style="width: 24px; height: 24px; margin-right: 8px;" />
+                    CarePlus
+                </span>
+            </a>
+    
+            <div class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+            <div class="menu" id="menu">
+                <ul class="menu-inner">
+                    <li class="menu-item"><a href="puberty.html" class="menu-link">Go Back</a></li>
+                </ul>
+            </div>
+            <a href="https://careplusdoctor.vercel.app/" class="menu-block">Appointment</a>
+        </nav>
+    </header>
+
+    <section class="section banner banner-section">
+        <div class="bg-dark text-light p-3">
+            <div class="container text-center">
+                <h1 class="display-4">Diseases & Taboos During Puberty</h1>
+                <p class="lead">Understanding the health risks and cultural taboos that arise during puberty and how to address them.</p>
+            </div>
+        </div>
+     </section>
+
+    <main class="py-4">
+        <div class="container">
+            <section class="mb-5">
+                <h2 class="text-primary">Introduction</h2>
+                <p>During puberty, adolescents experience physical changes that may lead to various health risks, as well as cultural taboos. Awareness of these issues can help ensure a healthier transition into adulthood.</p>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="text-primary">Diseases and Risks</h2>
+                <table class=" bg-dark table table-striped table-bordered">
+                    <thead class="table-dark bg-dark">
+                        <tr>
+                            <th>Health Risk</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-dark">
+                        <tr>
+                            <td>Acne</td>
+                            <td>A common skin condition caused by hormonal changes, leading to clogged pores and pimples.</td>
+                        </tr>
+                        <tr>
+                            <td>Menstrual Disorders</td>
+                            <td>Irregular periods, painful cramps, and heavy bleeding due to hormonal imbalances.</td>
+                        </tr>
+                        <tr>
+                            <td>Reproductive Health Issues</td>
+                            <td>Potential challenges such as endometriosis, polycystic ovary syndrome (PCOS), or erectile dysfunction during puberty.</td>
+                        </tr>
+                        <tr>
+                            <td>Eating Disorders</td>
+                            <td>During puberty, body image concerns can lead to eating disorders like anorexia or bulimia.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="text-primary">Cultural Taboos</h2>
+                <div class="row ">
+                    <div class="col-md-6 ">
+                        <ul class="list-group">
+                            <li class="list-group-item bg-dark">Menstruation: Often considered a taboo topic, leading to shame and secrecy.</li>
+                            <li class="list-group-item bg-dark">Sexual Health: Open discussions about sexual health and contraception are often avoided due to cultural norms.</li>
+                            <li class="list-group-item bg-dark">Body Changes: Adolescents may feel embarrassed to talk about bodily changes such as breast development, voice changes, or pubic hair growth.</li>
+                            <li class="list-group-item bg-dark">Mental Health Stigma: Cultural reluctance to address mental health issues like depression or anxiety, often seen as weaknesses.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="text-primary">Preventive Measures</h2>
+                <div class="row ">
+                    <div class="col-md-6 ">
+                        <ul class="list-group">
+                            <li class="list-group-item bg-dark">Open dialogue about puberty, its changes, and related health risks.</li>
+                            <li class="list-group-item bg-dark">Encourage good hygiene practices, especially for skin care and menstrual health.</li>
+                            <li class="list-group-item bg-dark">Promote mental health awareness to reduce the stigma around seeking help.</li>
+                            <li class="list-group-item bg-dark">Foster a positive body image and support healthy eating habits.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="text-primary">Detailed Explanation</h2>
+                <p><strong>Acne:</strong> Hormonal changes can increase oil production, leading to acne breakouts. Good skincare practices and treatment options can help manage this.</p>
+                <p><strong>Menstrual Health:</strong> Many adolescents may face challenges with irregular or painful periods. Seeking medical advice and managing stress can help ease symptoms.</p>
+                <p><strong>Reproductive Health:</strong> Puberty marks the beginning of reproductive health challenges, and it is important to be aware of issues like PCOS or early signs of sexual health problems.</p>
+            </section>
+
+            <section>
+                <h2 class="text-primary">How to Seek Help</h2>
+                <p>If you face health risks or feel the burden of cultural taboos, it is crucial to seek help early. Here are some steps:</p>
+                <ol>
+                    <li>Visit a healthcare provider for advice on managing physical symptoms like acne, menstrual disorders, or eating disorders.</li>
+                    <li>Have open conversations with trusted adults or counselors to break the stigma around topics like sexual health and mental well-being.</li>
+                    <li>Join support groups or online communities to share experiences and seek advice from others.</li>
+                </ol>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-light py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 CarePlus. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

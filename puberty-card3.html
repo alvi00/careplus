@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Issues During Puberty</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        .list-group-item{
+            color: white;
+        }
+    
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        .banner-column {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .banner-text {
+            flex: 1;
+            order: 1;
+        }
+
+        .banner-animation {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            order: 2;
+        }
+
+        .banner-animation dotlottie-player {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .banner-animation.pc {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            transform: translateX(40px);
+        }
+
+        .menu-link {
+            color: #8f8c8c;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .menu-link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 0;
+            height: 2px;
+            background: #007bff;
+            transition: width 0.3s ease;
+        }
+
+        .menu-link:hover::after {
+            width: 100%;
+        }
+
+        .menu-link:hover {
+            transform: scale(1.1);
+            color: #007bff;
+            text-shadow: 0 0 8px #007bff;
+        }
+
+        @media (max-width: 768px) {
+            .banner-column {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .banner-animation {
+                order: 1;
+                margin-top: 20px;
+            }
+
+            .banner-text {
+                order: 2;
+            }
+
+            .heading-lg {
+                margin-top: 50px;
+            }
+        }
+        
+    </style>
+    
+</head>
+<body>
+
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="puberty.html" class="brand">
+                <span style="display: flex; align-items: center;">
+                    <img src="assets/favicon.ico" alt="CarePlus Logo" style="width: 24px; height: 24px; margin-right: 8px;" />
+                    CarePlus
+                </span>
+            </a>
+    
+            <div class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+            <div class="menu" id="menu">
+                <ul class="menu-inner">
+                    <li class="menu-item"><a href="puberty.html" class="menu-link">Go Back</a></li>
+                </ul>
+            </div>
+            <a href="https://careplusdoctor.vercel.app/" class="menu-block">Appointment</a>
+        </nav>
+    </header>
+
+    <section class="section banner banner-section">
+        <div class="bg-dark text-light p-3">
+            <div class="container text-center">
+                <h1 class="display-4">Mental Health Issues During Puberty</h1>
+                <p class="lead">Understanding the mental health challenges faced during puberty, their causes, and effective ways to address them.</p>
+            </div>
+        </div>
+     </section>
+
+    <main class="py-4">
+        <div class="container">
+            <section class="mb-5">
+                <h2 class="text-primary">Introduction</h2>
+                <p>Puberty is a time of significant change, and mental health issues may arise due to the physical, emotional, and social shifts. Understanding the common mental health challenges during puberty can help mitigate their impact.</p>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="text-primary">Causes and Effects</h2>
+                <table class=" bg-dark table table-striped table-bordered">
+                    <thead class="table-dark bg-dark">
+                        <tr>
+                            <th>Cause</th>
+                            <th>Mental Health Effect</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-dark">
+                        <tr>
+                            <td>Hormonal Fluctuations</td>
+                            <td>Increased mood swings, feelings of anxiety, depression, and irritability.</td>
+                        </tr>
+                        <tr>
+                            <td>Social Isolation</td>
+                            <td>Loneliness, feelings of depression, and low self-esteem.</td>
+                        </tr>
+                        <tr>
+                            <td>Body Image Issues</td>
+                            <td>Anxiety and depression related to changing appearance and societal expectations.</td>
+                        </tr>
+                        <tr>
+                            <td>Academic Pressure</td>
+                            <td>Increased stress and anxiety due to performance expectations in school.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="text-primary">Preventive Measures</h2>
+                <div class="row ">
+                    <div class="col-md-6 ">
+                        <ul class="list-group">
+                            <li class="list-group-item bg-dark">Encourage self-compassion and positive self-talk.</li>
+                            <li class="list-group-item bg-dark">Promote physical activity and a balanced diet to support mental well-being.</li>
+                            <li class="list-group-item bg-dark">Maintain open communication about mental health and emotions.</li>
+                            <li class="list-group-item bg-dark">Encourage professional counseling or therapy when necessary.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="text-primary">Detailed Explanation</h2>
+                <p><strong>Hormonal Fluctuations:</strong> Hormonal changes during puberty can significantly affect mood and emotional regulation, leading to increased stress and mood swings.</p>
+                <p><strong>Body Image Issues:</strong> With physical transformations occurring, adolescents may struggle with self-esteem, and anxiety related to their body image can arise.</p>
+                <p><strong>Academic Pressure:</strong> The pressure to perform academically, combined with hormonal changes, can lead to feelings of stress and overwhelm.</p>
+            </section>
+
+            <section>
+                <h2 class="text-primary">How to Seek Help</h2>
+                <p>If mental health issues arise during puberty, it is important to seek help early. Here are some steps:</p>
+                <ol>
+                    <li>Talk openly with a trusted adult, such as a parent, teacher, or school counselor.</li>
+                    <li>Consider seeking professional counseling or therapy if issues like anxiety or depression persist.</li>
+                    <li>Join a support group or engage in online communities to discuss shared experiences.</li>
+                </ol>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-light py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 CarePlus. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

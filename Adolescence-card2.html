@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotional Development During Adolescence</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        .list-group-item {
+            color: white;
+        }
+
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        .banner-column {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .banner-text {
+            flex: 1;
+            order: 1;
+        }
+
+        .banner-animation {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            order: 2;
+        }
+
+        .banner-animation.dotlottie-player {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .banner-animation.pc {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            transform: translateX(40px);
+        }
+
+        .menu-link {
+            color: #8f8c8c;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .menu-link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 0;
+            height: 2px;
+            background: #007bff;
+            transition: width 0.3s ease;
+        }
+
+        .menu-link:hover::after {
+            width: 100%;
+        }
+
+        .menu-link:hover {
+            transform: scale(1.1);
+            color: #007bff;
+            text-shadow: 0 0 8px #007bff;
+        }
+
+        @media (max-width: 768px) {
+            .banner-column {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .banner-animation {
+                order: 1;
+                margin-top: 20px;
+            }
+
+            .banner-text {
+                order: 2;
+            }
+
+            .heading-lg {
+                margin-top: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="Adolescence.html" class="brand">
+                <span style="display: flex; align-items: center;">
+                    <img src="assets/favicon.ico" alt="CarePlus Logo" style="width: 24px; height: 24px; margin-right: 8px;" />
+                    CarePlus
+                </span>
+            </a>
+    
+            <div class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+            <div class="menu" id="menu">
+                <ul class="menu-inner">
+                    <li class="menu-item"><a href="Adolescence.html" class="menu-link">Go Back</a></li>
+                </ul>
+            </div>
+            <a href="https://careplusdoctor.vercel.app/" class="menu-block">Appointment</a>
+        </nav>
+    </header>
+
+    <section class="section banner banner-section">
+        <div class="bg-dark text-light p-3">
+            <div class="container text-center">
+                <h1 class="display-4">Emotional Development During Adolescence</h1>
+                <p class="lead">Explore the emotional milestones women face during adolescence and strategies to navigate them effectively.</p>
+            </div>
+        </div>
+     </section>
+
+    <main class="py-4">
+        <div class="container">
+            <section class="mb-5">
+                <h2 class="text-primary">Introduction</h2>
+                <p>Adolescence is a transformative period marked by intense emotional experiences. For women, these emotions are often intertwined with identity formation, self-expression, and social relationships.</p>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="text-primary">Key Emotional Milestones</h2>
+                <table class="bg-dark table table-striped table-bordered">
+                    <thead class="table-dark bg-dark">
+                        <tr>
+                            <th>Milestone</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-dark">
+                        <tr>
+                            <td>Increased Self-Awareness</td>
+                            <td>Understanding one's emotions and how they affect behavior and decisions.</td>
+                        </tr>
+                        <tr>
+                            <td>Empathy Development</td>
+                            <td>Greater capacity to understand and share the feelings of others.</td>
+                        </tr>
+                        <tr>
+                            <td>Identity Exploration</td>
+                            <td>Finding one's place in society and establishing personal values.</td>
+                        </tr>
+                        <tr>
+                            <td>Managing Peer Relationships</td>
+                            <td>Learning to handle friendships, romantic interests, and social expectations.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="text-primary">Tips for Emotional Well-Being</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-group">
+                            <li class="list-group-item bg-dark">Encourage journaling to process emotions and gain clarity.</li>
+                            <li class="list-group-item bg-dark">Promote healthy communication with family and friends.</li>
+                            <li class="list-group-item bg-dark">Foster self-compassion and avoid harsh self-criticism.</li>
+                            <li class="list-group-item bg-dark">Engage in creative outlets like art, music, or writing.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="text-primary">Challenges and Overcoming Them</h2>
+                <p>Emotional turbulence during adolescence is common. Hormonal changes, societal expectations, and academic pressures can amplify these challenges. Building a strong support system and seeking guidance when needed can make a significant difference.</p>
+            </section>
+
+            <section>
+                <h2 class="text-primary">Seeking Support</h2>
+                <p>If emotions feel overwhelming, consider:</p>
+                <ol>
+                    <li>Talking to a trusted family member or mentor.</li>
+                    <li>Reaching out to a school counselor or therapist.</li>
+                    <li>Joining a support group for adolescent girls.</li>
+                    <li>Practicing mindfulness techniques like meditation or deep breathing.</li>
+                </ol>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-light py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 CarePlus. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

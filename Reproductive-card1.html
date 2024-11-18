@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductive Age: Fertility and Reproductive Health</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        .list-group-item {
+            color: white;
+        }
+        .banner-column {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .banner-text {
+            flex: 1;
+            order: 1;
+        }
+        .banner-animation {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            order: 2;
+        }
+        .menu-link {
+            color: #8f8c8c;
+            text-decoration: none;
+            position: relative;
+        }
+        .menu-link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 0;
+            height: 2px;
+            background: #007bff;
+            transition: width 0.3s ease;
+        }
+        .menu-link:hover::after {
+            width: 100%;
+        }
+        .menu-link:hover {
+            transform: scale(1.1);
+            color: #007bff;
+            text-shadow: 0 0 8px #007bff;
+        }
+        @media (max-width: 768px) {
+            .banner-column {
+                flex-direction: column;
+                text-align: center;
+            }
+            .banner-animation {
+                order: 1;
+                margin-top: 20px;
+            }
+            .banner-text {
+                order: 2;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="Reproductive.html" class="brand">
+                <span style="display: flex; align-items: center;">
+                    <img src="assets/favicon.ico" alt="CarePlus Logo" style="width: 24px; height: 24px; margin-right: 8px;" />
+                    CarePlus
+                </span>
+            </a>
+            <div class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+            <div class="menu" id="menu">
+                <ul class="menu-inner">
+                    <li class="menu-item"><a href="reproductive-age-fertility.html" class="menu-link">Go Back</a></li>
+                </ul>
+            </div>
+            <a href="https://careplusdoctor.vercel.app/" class="menu-block">Appointment</a>
+        </nav>
+    </header>
+
+    <!-- Banner Section -->
+    <section class="section banner banner-section">
+        <div class="bg-dark text-light p-3">
+            <div class="container text-center">
+                <h1 class="display-4">Reproductive Age: Fertility and Reproductive Health</h1>
+                <p class="lead">Understand the key factors that influence fertility and reproductive health during the reproductive years.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="py-4">
+        <div class="container">
+            <!-- Section: Introduction -->
+            <section class="mb-5">
+                <h2 class="text-primary">Introduction</h2>
+                <p>Fertility and reproductive health are essential aspects of life during the reproductive age. It involves the well-being of the reproductive organs and the ability to conceive and carry a pregnancy.</p>
+            </section>
+
+            <!-- Section: Factors Affecting Fertility -->
+            <section class="mb-5">
+                <h2 class="text-primary">Factors Affecting Fertility</h2>
+                <table class="bg-dark table table-striped table-bordered">
+                    <thead class="table-dark bg-dark">
+                        <tr>
+                            <th>Factor</th>
+                            <th>Effect</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-dark">
+                        <tr>
+                            <td>Age</td>
+                            <td>Fertility decreases with age, especially after 35 years.</td>
+                        </tr>
+                        <tr>
+                            <td>Health Conditions</td>
+                            <td>Conditions like PCOS, endometriosis, and obesity can affect fertility.</td>
+                        </tr>
+                        <tr>
+                            <td>Lifestyle Factors</td>
+                            <td>Smoking, alcohol use, and poor nutrition can impair fertility.</td>
+                        </tr>
+                        <tr>
+                            <td>Stress</td>
+                            <td>High stress levels can disrupt hormonal balance, affecting fertility.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Section: Reproductive Health Tips -->
+            <section class="mb-5">
+                <h2 class="text-primary">Reproductive Health Tips</h2>
+                <ul class="list-group">
+                    <li class="list-group-item bg-dark">Maintain a healthy weight.</li>
+                    <li class="list-group-item bg-dark">Avoid smoking and excessive alcohol consumption.</li>
+                    <li class="list-group-item bg-dark">Eat a balanced diet rich in fruits, vegetables, and whole grains.</li>
+                    <li class="list-group-item bg-dark">Stay active with regular exercise.</li>
+                </ul>
+            </section>
+
+            <!-- Section: When to Seek Help -->
+            <section>
+                <h2 class="text-primary">When to Seek Help</h2>
+                <p>If you have been trying to conceive for over a year without success or are experiencing irregular periods, it may be time to consult a fertility specialist.</p>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 CarePlus. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

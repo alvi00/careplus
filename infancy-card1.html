@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physical Development During Infancy</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        .list-group-item{
+            color: white;
+        }
+    
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        .banner-column {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .banner-text {
+            flex: 1;
+            order: 1;
+        }
+
+        .banner-animation {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            order: 2;
+        }
+
+        .banner-animation dotlottie-player {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .banner-animation.pc {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            transform: translateX(40px);
+        }
+
+        .menu-link {
+            color: #8f8c8c;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .menu-link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 0;
+            height: 2px;
+            background: #007bff;
+            transition: width 0.3s ease;
+        }
+
+        .menu-link:hover::after {
+            width: 100%;
+        }
+
+        .menu-link:hover {
+            transform: scale(1.1);
+            color: #007bff;
+            text-shadow: 0 0 8px #007bff;
+        }
+
+        @media (max-width: 768px) {
+            .banner-column {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .banner-animation {
+                order: 1;
+                margin-top: 20px;
+            }
+
+            .banner-text {
+                order: 2;
+            }
+
+            .heading-lg {
+                margin-top: 50px;
+            }
+        }
+        
+    </style>
+    
+</head>
+<body>
+
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="infancy.html" class="brand">
+                <span style="display: flex; align-items: center;">
+                    <img src="assets/favicon.ico" alt="CarePlus Logo" style="width: 24px; height: 24px; margin-right: 8px;" />
+                    CarePlus
+                </span>
+            </a>
+    
+            <div class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+            <div class="menu" id="menu">
+                <ul class="menu-inner">
+                    <li class="menu-item"><a href="infancy.html" class="menu-link">Go Back</a></li>
+                </ul>
+            </div>
+            <a href="https://careplusdoctor.vercel.app/" class="menu-block">Appointment</a>
+        </nav>
+    </header>
+
+    <section class="section banner banner-section">
+        <div class="bg-dark text-light p-3">
+            <div class="container text-center">
+                <h1 class="display-4">Physical Development During Infancy</h1>
+                <p class="lead">Understanding the rapid physical changes that take place in the first two years of life.</p>
+            </div>
+        </div>
+     </section>
+
+    <main class="py-4">
+        <div class="container">
+            <section class="mb-5">
+                <h2 class="text-primary">Introduction</h2>
+                <p>Infancy is a stage of rapid physical growth and development. During the first two years, babies experience significant changes in motor skills, body proportions, and sensory development. This period is critical for laying the foundation for future physical health and mobility.</p>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="text-primary">Key Physical Changes</h2>
+                <table class=" bg-dark table table-striped table-bordered">
+                    <thead class="table-dark bg-dark">
+                        <tr>
+                            <th>Physical Change</th>
+                            <th>Explanation</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-dark">
+                        <tr>
+                            <td>Weight and Height Growth</td>
+                            <td>Infants double their birth weight by about 5 months and triple it by their first birthday. Height increases as the skeleton grows and strengthens.</td>
+                        </tr>
+                        <tr>
+                            <td>Head Control</td>
+                            <td>Newborns have limited head control, but by around 3 months, they develop the ability to hold their head steady while sitting.</td>
+                        </tr>
+                        <tr>
+                            <td>Motor Skills Development</td>
+                            <td>Infants begin to develop fine and gross motor skills, such as grasping objects, rolling over, crawling, and eventually walking by their first year.</td>
+                        </tr>
+                        <tr>
+                            <td>Teething</td>
+                            <td>First teeth typically appear between 6-10 months. This can lead to discomfort, but it's an important milestone in physical development.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="text-primary">Sensory Development</h2>
+                <div class="row ">
+                    <div class="col-md-6 ">
+                        <ul class="list-group">
+                            <li class="list-group-item bg-dark">Vision: At birth, infants can see objects up to 8-10 inches away. By 6 months, their vision improves, and they begin recognizing familiar faces.</li>
+                            <li class="list-group-item bg-dark">Hearing: Infants are born with the ability to hear. They begin to respond to sounds and recognize familiar voices, especially that of the mother.</li>
+                            <li class="list-group-item bg-dark">Touch: Babies are highly sensitive to touch, and this sense is key for bonding and emotional development.</li>
+                            <li class="list-group-item bg-dark">Taste and Smell: Newborns can distinguish between different tastes and smells, with a preference for sweet flavors.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="text-primary">Growth Milestones</h2>
+                <p>Infants reach several key physical milestones during the first two years of life:</p>
+                <ul>
+                    <li>Birth to 3 months: Lifts head while on tummy, begins to track objects with eyes.</li>
+                    <li>4 to 6 months: Begins to roll over, sits with support, and starts reaching and grasping objects.</li>
+                    <li>7 to 12 months: Crawls, pulls self up to stand, and may take first steps.</li>
+                    <li>12 to 24 months: Walks independently, begins to run, and develops more control over fine motor skills like drawing or stacking objects.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="text-primary">How to Support Physical Development</h2>
+                <p>Parents and caregivers can support physical development through the following practices:</p>
+                <ol>
+                    <li>Provide a safe space for the baby to explore and practice motor skills like rolling, crawling, and walking.</li>
+                    <li>Offer appropriate toys that encourage fine motor skills, such as stacking blocks or playing with textures.</li>
+                    <li>Ensure proper nutrition to support healthy growth, including breastfeeding or formula feeding, followed by solids as advised by healthcare professionals.</li>
+                    <li>Make time for tummy time to strengthen neck, shoulder, and arm muscles, aiding motor development.</li>
+                </ol>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-light py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 CarePlus. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

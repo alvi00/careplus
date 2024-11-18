@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Concerns and Care During Infancy</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        .list-group-item {
+            color: white;
+        }
+
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        .banner-column {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .banner-text {
+            flex: 1;
+            order: 1;
+        }
+
+        .banner-animation {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            order: 2;
+        }
+
+        .banner-animation.dotlottie-player {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .banner-animation.pc {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            transform: translateX(40px);
+        }
+
+        .menu-link {
+            color: #8f8c8c;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .menu-link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 0;
+            height: 2px;
+            background: #007bff;
+            transition: width 0.3s ease;
+        }
+
+        .menu-link:hover::after {
+            width: 100%;
+        }
+
+        .menu-link:hover {
+            transform: scale(1.1);
+            color: #007bff;
+            text-shadow: 0 0 8px #007bff;
+        }
+
+        @media (max-width: 768px) {
+            .banner-column {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .banner-animation {
+                order: 1;
+                margin-top: 20px;
+            }
+
+            .banner-text {
+                order: 2;
+            }
+
+            .heading-lg {
+                margin-top: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="infancy.html" class="brand">
+                <span style="display: flex; align-items: center;">
+                    <img src="assets/favicon.ico" alt="CarePlus Logo" style="width: 24px; height: 24px; margin-right: 8px;" />
+                    CarePlus
+                </span>
+            </a>
+    
+            <div class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+            <div class="menu" id="menu">
+                <ul class="menu-inner">
+                    <li class="menu-item"><a href="infancy.html" class="menu-link">Go Back</a></li>
+                </ul>
+            </div>
+            <a href="https://careplusdoctor.vercel.app/" class="menu-block">Appointment</a>
+        </nav>
+    </header>
+
+    <section class="section banner banner-section">
+        <div class="bg-dark text-light p-3">
+            <div class="container text-center">
+                <h1 class="display-4">Health Concerns and Care During Infancy</h1>
+                <p class="lead">Understanding common health issues in infancy and providing proper care for optimal growth and development.</p>
+            </div>
+        </div>
+     </section>
+
+    <main class="py-4">
+        <div class="container">
+            <section class="mb-5">
+                <h2 class="text-primary">Introduction</h2>
+                <p>Infancy is a critical stage where health and nutrition play a pivotal role in determining lifelong well-being. Ensuring proper medical care, hygiene, and nourishment can significantly reduce health risks and promote robust development.</p>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="text-primary">Common Health Concerns</h2>
+                <table class="bg-dark table table-striped table-bordered">
+                    <thead class="table-dark bg-dark">
+                        <tr>
+                            <th>Health Concern</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-dark">
+                        <tr>
+                            <td>Colic</td>
+                            <td>Persistent crying and discomfort due to digestive issues, common in the first three months.</td>
+                        </tr>
+                        <tr>
+                            <td>Respiratory Infections</td>
+                            <td>Frequent colds or coughs due to underdeveloped immune systems.</td>
+                        </tr>
+                        <tr>
+                            <td>Diaper Rash</td>
+                            <td>Skin irritation caused by prolonged exposure to moisture and irritants.</td>
+                        </tr>
+                        <tr>
+                            <td>Vitamin Deficiencies</td>
+                            <td>Insufficient intake of essential nutrients, leading to issues like anemia or rickets.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="text-primary">Preventive Measures</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-group">
+                            <li class="list-group-item bg-dark">Maintain regular pediatric check-ups for vaccinations and growth monitoring.</li>
+                            <li class="list-group-item bg-dark">Ensure proper hygiene to prevent infections and illnesses.</li>
+                            <li class="list-group-item bg-dark">Provide a balanced diet with adequate breastmilk or formula feeding.</li>
+                            <li class="list-group-item bg-dark">Monitor for any signs of allergies or intolerances to early foods.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="text-primary">Care Tips for Parents</h2>
+                <p>Parents and caregivers can take proactive steps to ensure their infant's health and comfort, including:</p>
+                <ul>
+                    <li>Adhering to vaccination schedules to protect against preventable diseases.</li>
+                    <li>Keeping the infant's environment clean and free from potential allergens.</li>
+                    <li>Using gentle, hypoallergenic skincare products to prevent irritation.</li>
+                    <li>Encouraging regular tummy time to support physical development and avoid flat head syndrome.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="text-primary">When to Seek Medical Help</h2>
+                <p>While minor illnesses are common, certain symptoms require prompt medical attention:</p>
+                <ol>
+                    <li>High fever, especially in infants under three months.</li>
+                    <li>Severe or persistent vomiting and diarrhea.</li>
+                    <li>Unusual lethargy or lack of responsiveness.</li>
+                    <li>Breathing difficulties or persistent wheezing.</li>
+                </ol>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-light py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 CarePlus. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

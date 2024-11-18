@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physical Changes During Adolescence</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        .list-group-item {
+            color: white;
+        }
+
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        .banner-column {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .banner-text {
+            flex: 1;
+            order: 1;
+        }
+
+        .banner-animation {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            order: 2;
+        }
+
+        .banner-animation.dotlottie-player {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .banner-animation.pc {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            transform: translateX(40px);
+        }
+
+        .menu-link {
+            color: #8f8c8c;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .menu-link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 0;
+            height: 2px;
+            background: #007bff;
+            transition: width 0.3s ease;
+        }
+
+        .menu-link:hover::after {
+            width: 100%;
+        }
+
+        .menu-link:hover {
+            transform: scale(1.1);
+            color: #007bff;
+            text-shadow: 0 0 8px #007bff;
+        }
+
+        @media (max-width: 768px) {
+            .banner-column {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .banner-animation {
+                order: 1;
+                margin-top: 20px;
+            }
+
+            .banner-text {
+                order: 2;
+            }
+
+            .heading-lg {
+                margin-top: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="Adolescence.html" class="brand">
+                <span style="display: flex; align-items: center;">
+                    <img src="assets/favicon.ico" alt="CarePlus Logo" style="width: 24px; height: 24px; margin-right: 8px;" />
+                    CarePlus
+                </span>
+            </a>
+    
+            <div class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+            <div class="menu" id="menu">
+                <ul class="menu-inner">
+                    <li class="menu-item"><a href="adolescence.html" class="menu-link">Go Back</a></li>
+                </ul>
+            </div>
+            <a href="https://careplusdoctor.vercel.app/" class="menu-block">Appointment</a>
+        </nav>
+    </header>
+
+    <section class="section banner banner-section">
+        <div class="bg-dark text-light p-3">
+            <div class="container text-center">
+                <h1 class="display-4">Physical Changes During Adolescence</h1>
+                <p class="lead">A detailed look at the significant physical transformations that occur during adolescence and their implications.</p>
+            </div>
+        </div>
+     </section>
+
+    <main class="py-4">
+        <div class="container">
+            <section class="mb-5">
+                <h2 class="text-primary">Introduction</h2>
+                <p>Adolescence marks the transition from childhood to adulthood, characterized by rapid physical changes. This stage is driven by hormonal shifts that impact the body, triggering growth and sexual development.</p>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="text-primary">Key Physical Changes</h2>
+                <table class="bg-dark table table-striped table-bordered">
+                    <thead class="table-dark bg-dark">
+                        <tr>
+                            <th>Change</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-dark">
+                        <tr>
+                            <td>Growth Spurts</td>
+                            <td>Sudden increases in height and weight, often accompanied by increased appetite.</td>
+                        </tr>
+                        <tr>
+                            <td>Puberty</td>
+                            <td>Development of primary and secondary sexual characteristics, such as menstruation and voice changes.</td>
+                        </tr>
+                        <tr>
+                            <td>Skin Changes</td>
+                            <td>Increased oil production leading to acne and other skin issues.</td>
+                        </tr>
+                        <tr>
+                            <td>Body Composition</td>
+                            <td>Redistribution of fat and muscle, with boys gaining muscle mass and girls accumulating fat in certain areas.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="text-primary">Tips for Managing Changes</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-group">
+                            <li class="list-group-item bg-dark">Maintain a balanced diet rich in nutrients to support growth.</li>
+                            <li class="list-group-item bg-dark">Engage in regular physical activity to build strength and manage weight.</li>
+                            <li class="list-group-item bg-dark">Practice good hygiene to manage skin issues effectively.</li>
+                            <li class="list-group-item bg-dark">Seek guidance from trusted adults or healthcare professionals if needed.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="text-primary">Significance of These Changes</h2>
+                <p>Physical changes during adolescence are vital for preparing the body for adulthood. They influence self-image, confidence, and social interactions, making it important to address any concerns promptly.</p>
+            </section>
+
+            <section>
+                <h2 class="text-primary">When to Consult a Doctor</h2>
+                <p>Some physical changes may require medical advice, such as:</p>
+                <ol>
+                    <li>Early or delayed puberty compared to peers.</li>
+                    <li>Severe or persistent acne unresponsive to over-the-counter treatments.</li>
+                    <li>Significant weight gain or loss without a clear cause.</li>
+                    <li>Pain or discomfort during growth spurts.</li>
+                </ol>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-light py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 CarePlus. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

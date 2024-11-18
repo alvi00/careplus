@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotional Bonding During Infancy</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        .list-group-item{
+            color: white;
+        }
+    
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        .banner-column {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .banner-text {
+            flex: 1;
+            order: 1;
+        }
+
+        .banner-animation {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            order: 2;
+        }
+
+        .banner-animation dotlottie-player {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .banner-animation.pc {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            transform: translateX(40px);
+        }
+
+        .menu-link {
+            color: #8f8c8c;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .menu-link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 0;
+            height: 2px;
+            background: #007bff;
+            transition: width 0.3s ease;
+        }
+
+        .menu-link:hover::after {
+            width: 100%;
+        }
+
+        .menu-link:hover {
+            transform: scale(1.1);
+            color: #007bff;
+            text-shadow: 0 0 8px #007bff;
+        }
+
+        @media (max-width: 768px) {
+            .banner-column {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .banner-animation {
+                order: 1;
+                margin-top: 20px;
+            }
+
+            .banner-text {
+                order: 2;
+            }
+
+            .heading-lg {
+                margin-top: 50px;
+            }
+        }
+        
+    </style>
+    
+</head>
+<body>
+
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="infancy.html" class="brand">
+                <span style="display: flex; align-items: center;">
+                    <img src="assets/favicon.ico" alt="CarePlus Logo" style="width: 24px; height: 24px; margin-right: 8px;" />
+                    CarePlus
+                </span>
+            </a>
+    
+            <div class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+            <div class="menu" id="menu">
+                <ul class="menu-inner">
+                    <li class="menu-item"><a href="infancy.html" class="menu-link">Go Back</a></li>
+                </ul>
+            </div>
+            <a href="https://careplusdoctor.vercel.app/" class="menu-block">Appointment</a>
+        </nav>
+    </header>
+
+    <section class="section banner banner-section">
+        <div class="bg-dark text-light p-3">
+            <div class="container text-center">
+                <h1 class="display-4">Emotional Bonding During Infancy</h1>
+                <p class="lead">Understanding the vital emotional connections infants form with caregivers and their impact on development.</p>
+            </div>
+        </div>
+     </section>
+
+    <main class="py-4">
+        <div class="container">
+            <section class="mb-5">
+                <h2 class="text-primary">Introduction</h2>
+                <p>Emotional bonding is a crucial aspect of infancy. The emotional connections that infants form with their caregivers lay the foundation for their social, emotional, and cognitive development. These early bonds influence the infant's sense of security, attachment styles, and later relationships.</p>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="text-primary">Key Emotional Milestones</h2>
+                <table class=" bg-dark table table-striped table-bordered">
+                    <thead class="table-dark bg-dark">
+                        <tr>
+                            <th>Milestone</th>
+                            <th>Explanation</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-dark">
+                        <tr>
+                            <td>Attachment</td>
+                            <td>Infants form strong emotional bonds with caregivers, which provide a secure base for exploring the world.</td>
+                        </tr>
+                        <tr>
+                            <td>Separation Anxiety</td>
+                            <td>By around 6-8 months, infants may experience distress when separated from their primary caregiver, demonstrating emotional attachment.</td>
+                        </tr>
+                        <tr>
+                            <td>Social Smiling</td>
+                            <td>By 6 weeks, infants begin to smile in response to social stimuli, a key indicator of emotional engagement.</td>
+                        </tr>
+                        <tr>
+                            <td>Recognition of Emotions</td>
+                            <td>By 3-6 months, infants start recognizing and reacting to the emotions of others, especially facial expressions.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="text-primary">Theories of Emotional Bonding</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-group">
+                            <li class="list-group-item bg-dark">Bowlby’s Attachment Theory: Emphasizes the importance of a secure attachment between infants and their primary caregivers for healthy emotional development.</li>
+                            <li class="list-group-item bg-dark">Harlow’s Monkeys: Demonstrated the importance of comfort and emotional security in early bonding through studies with infant monkeys.</li>
+                            <li class="list-group-item bg-dark">Ainsworth’s Strange Situation: A method used to assess the security of infant attachment and how it influences future relationships.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="text-primary">Supporting Emotional Bonding</h2>
+                <p>Strong emotional bonds are crucial for the infant's mental and emotional well-being. Caregivers can support this bonding process by:</p>
+                <ul>
+                    <li>Engaging in responsive caregiving by quickly attending to the infant's needs, building trust and security.</li>
+                    <li>Making eye contact, speaking softly, and holding the infant close to encourage emotional connection.</li>
+                    <li>Providing comfort and reassurance during stressful situations, which helps to regulate emotions.</li>
+                    <li>Encouraging social interaction and exploration, offering a balance between security and independence.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="text-primary">Impact of Emotional Bonding</h2>
+                <p>The emotional bonds formed during infancy have lifelong effects. A secure attachment to caregivers is linked to positive emotional, social, and cognitive outcomes in childhood and adulthood. Children who experience strong emotional bonds are more likely to develop healthy relationships, have greater emotional regulation, and perform better academically.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-light py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 CarePlus. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

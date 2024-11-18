@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climacteric Periods for Menopause and Hormonal Changes</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        .list-group-item{
+            color: white;
+        }
+    
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        .banner-column {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .banner-text {
+            flex: 1;
+            order: 1;
+        }
+
+        .banner-animation {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            order: 2;
+        }
+
+        .banner-animation dotlottie-player {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .banner-animation.pc {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            transform: translateX(40px);
+            /* Adjust this value as needed */
+        }
+
+
+        .menu-link {
+            color: #8f8c8c;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .menu-link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 0;
+            height: 2px;
+            background: #007bff;
+            transition: width 0.3s ease;
+        }
+
+        .menu-link:hover::after {
+            width: 100%;
+            /* Underline expands */
+        }
+
+        .menu-link:hover {
+            transform: scale(1.1);
+            /* Slightly increase the size */
+            color: #007bff;
+            text-shadow: 0 0 8px #007bff;
+
+        }
+
+        /* Responsive layout for Mobile */
+        @media (max-width: 768px) {
+            .banner-column {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .banner-animation {
+                order: 1;
+                margin-top: 20px;
+            }
+
+            .banner-text {
+                order: 2;
+                /* Move text after animation */
+            }
+
+            .heading-lg {
+                margin-top: 50px;
+            }
+
+        }
+        
+    </style>
+    
+</head>
+<body>
+
+    
+        <!-- Header Section -->
+        <header class="header" id="header">
+            <nav class="navbar container">
+                <a href="Climacteric.html" class="brand">
+                    <span style="display: flex; align-items: center;">
+                        <img src="assets/favicon.ico" alt="CarePlus Logo"
+                            style="width: 24px; height: 24px; margin-right: 8px;" />
+                        CarePlus
+                    </span>
+                </a>
+    
+                <div class="burger" id="burger">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </div>
+                <div class="menu" id="menu">
+                    <ul class="menu-inner">
+                        <li class="menu-item"><a href="menopause.html" class="menu-link">Go Back</a></li>
+                    </ul>
+                </div>
+                <a href="https://careplusdoctor.vercel.app/" class="menu-block">Appointment</a>
+            </nav>
+        </header>
+
+    <!-- Header Section -->
+     <section class="section banner banner-section">
+        <div class="bg-dark text-light p-3">
+            <div class="container text-center">
+                <h1 class="display-4">Climacteric Periods for Menopause and Hormonal Changes</h1>
+                <p class="lead">Understanding the physiological and psychological changes during menopause, their causes, and ways to manage effectively.</p>
+            </div>
+        </div>
+     </section>
+
+
+    <!-- Main Content -->
+    <main class="py-4">
+        <div class="container">
+            <!-- Section: Introduction -->
+            <section class="mb-5">
+                <h2 class="text-primary">Introduction</h2>
+                <p>Menopause marks the end of a woman's reproductive years and is associated with significant hormonal and emotional changes. During this phase, women may experience a range of physical, psychological, and emotional challenges that need to be understood and managed.</p>
+            </section>
+
+            <!-- Section: Causes and Effects -->
+            <section class="mb-5">
+                <h2 class="text-primary">Causes and Effects</h2>
+                <table class=" bg-dark table table-striped table-bordered">
+                    <thead class="table-dark bg-dark">
+                        <tr>
+                            <th>Cause</th>
+                            <th>Psychological Effect</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-dark">
+                        <tr>
+                            <td>Hormonal Fluctuations</td>
+                            <td>Emotional instability, mood swings, and irritability.</td>
+                        </tr>
+                        <tr>
+                            <td>Physical Changes</td>
+                            <td>Hot flashes, sleep disturbances, and fatigue.</td>
+                        </tr>
+                        <tr>
+                            <td>Social Perceptions</td>
+                            <td>Feelings of invisibility or loss of identity in social and professional environments.</td>
+                        </tr>
+                        <tr>
+                            <td>Health Concerns</td>
+                            <td>Increased anxiety and stress related to health risks like osteoporosis or heart disease.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Section: Preventive Measures -->
+            <section class="mb-5">
+                <h2 class="text-primary">Preventive Measures</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-group">
+                            <li class="list-group-item bg-dark">Maintain regular exercise to improve physical and mental health.</li>
+                            <li class="list-group-item bg-dark">Practice mindfulness and stress-reduction techniques such as meditation.</li>
+                            <li class="list-group-item bg-dark">Seek social support from friends, family, or support groups.</li>
+                            <li class="list-group-item bg-dark">Consult with a healthcare provider about hormone replacement therapy (HRT) if necessary.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section: Detailed Explanation -->
+            <section class="mb-5">
+                <h2 class="text-primary">Detailed Explanation</h2>
+                <p><strong>Hormonal Changes:</strong> During menopause, a decrease in estrogen and progesterone levels can cause various psychological symptoms, including mood swings and depression.</p>
+                <p><strong>Physical Discomfort:</strong> Many women experience symptoms such as hot flashes, weight gain, and night sweats, which can also affect their mental well-being.</p>
+                <p><strong>Societal and Psychological Factors:</strong> The societal perception of menopause as a decline in youth can lead to feelings of anxiety, loss of identity, or depression.</p>
+            </section>
+
+            <!-- Section: How to Seek Help -->
+            <section>
+                <h2 class="text-primary">How to Seek Help</h2>
+                <p>Women experiencing emotional or psychological challenges during menopause should seek support. Here are some steps to take:</p>
+                <ol>
+                    <li>Talk to a healthcare provider about symptoms and potential treatment options.</li>
+                    <li>Reach out to friends or family for emotional support.</li>
+                    <li>Join support groups for shared experiences and advice on coping strategies.</li>
+                </ol>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 CarePlus. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

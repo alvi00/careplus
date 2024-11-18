@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adulthood: Physical Well-being and Aging</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        .list-group-item {
+            color: white;
+        }
+        .banner-column {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .banner-text {
+            flex: 1;
+            order: 1;
+        }
+        .banner-animation {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            order: 2;
+        }
+        .menu-link {
+            color: #8f8c8c;
+            text-decoration: none;
+            position: relative;
+        }
+        .menu-link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 0;
+            height: 2px;
+            background: #007bff;
+            transition: width 0.3s ease;
+        }
+        .menu-link:hover::after {
+            width: 100%;
+        }
+        .menu-link:hover {
+            transform: scale(1.1);
+            color: #007bff;
+            text-shadow: 0 0 8px #007bff;
+        }
+        @media (max-width: 768px) {
+            .banner-column {
+                flex-direction: column;
+                text-align: center;
+            }
+            .banner-animation {
+                order: 1;
+                margin-top: 20px;
+            }
+            .banner-text {
+                order: 2;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="Adulthood.html" class="brand">
+                <span style="display: flex; align-items: center;">
+                    <img src="assets/favicon.ico" alt="CarePlus Logo" style="width: 24px; height: 24px; margin-right: 8px;" />
+                    CarePlus
+                </span>
+            </a>
+            <div class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+            <div class="menu" id="menu">
+                <ul class="menu-inner">
+                    <li class="menu-item"><a href="adulthood-physical-wellbeing.html" class="menu-link">Go Back</a></li>
+                </ul>
+            </div>
+            <a href="https://careplusdoctor.vercel.app/" class="menu-block">Appointment</a>
+        </nav>
+    </header>
+
+    <!-- Banner Section -->
+    <section class="section banner banner-section">
+        <div class="bg-dark text-light p-3">
+            <div class="container text-center">
+                <h1 class="display-4">Adulthood: Physical Well-being and Aging</h1>
+                <p class="lead">Understanding the changes in physical health and well-being as we age and how to maintain vitality.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="py-4">
+        <div class="container">
+            <!-- Section: Introduction -->
+            <section class="mb-5">
+                <h2 class="text-primary">Introduction</h2>
+                <p>Adulthood brings about several physical changes, and aging becomes a central focus. Understanding how to maintain physical health and vitality can lead to a better quality of life as we age.</p>
+            </section>
+
+            <!-- Section: Physical Changes and Their Impact -->
+            <section class="mb-5">
+                <h2 class="text-primary">Physical Changes and Their Impact</h2>
+                <table class="bg-dark table table-striped table-bordered">
+                    <thead class="table-dark bg-dark">
+                        <tr>
+                            <th>Physical Change</th>
+                            <th>Impact</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-dark">
+                        <tr>
+                            <td>Reduced Muscle Mass</td>
+                            <td>Slower metabolism, lower strength, and higher risk of injury.</td>
+                        </tr>
+                        <tr>
+                            <td>Joint Pain and Stiffness</td>
+                            <td>Difficulty with movement, reduced flexibility.</td>
+                        </tr>
+                        <tr>
+                            <td>Slower Recovery</td>
+                            <td>Longer recovery periods after exercise or injury.</td>
+                        </tr>
+                        <tr>
+                            <td>Vision and Hearing Decline</td>
+                            <td>Increased difficulty in focusing, reduced hearing clarity.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Section: Maintaining Physical Health -->
+            <section class="mb-5">
+                <h2 class="text-primary">Maintaining Physical Health</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-group">
+                            <li class="list-group-item bg-dark">Engage in regular physical exercise like walking or weight training.</li>
+                            <li class="list-group-item bg-dark">Maintain a balanced diet rich in vitamins and minerals.</li>
+                            <li class="list-group-item bg-dark">Ensure adequate sleep for recovery and energy.</li>
+                            <li class="list-group-item bg-dark">Stay hydrated and avoid excessive alcohol consumption.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section: Aging and its Challenges -->
+            <section class="mb-5">
+                <h2 class="text-primary">Aging and its Challenges</h2>
+                <p><strong>Physical Decline:</strong> As we age, our physical capacities naturally decline. It's essential to stay active and focused on fitness to mitigate some of these effects.</p>
+                <p><strong>Preventive Care:</strong> Regular check-ups and health screenings help detect issues early and allow for timely interventions.</p>
+            </section>
+
+            <!-- Section: Seeking Support -->
+            <section>
+                <h2 class="text-primary">Seeking Support</h2>
+                <p>It's essential to seek help from medical professionals to maintain good health during adulthood:</p>
+                <ol>
+                    <li>Consult a physician regularly for health check-ups.</li>
+                    <li>Engage with physical therapists for joint care and strength-building.</li>
+                    <li>Consider joining fitness groups or clubs for motivation and support.</li>
+                </ol>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 CarePlus. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

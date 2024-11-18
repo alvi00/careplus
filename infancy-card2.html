@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognitive Development During Infancy</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        .list-group-item{
+            color: white;
+        }
+    
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        .banner-column {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .banner-text {
+            flex: 1;
+            order: 1;
+        }
+
+        .banner-animation {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            order: 2;
+        }
+
+        .banner-animation dotlottie-player {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .banner-animation.pc {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            transform: translateX(40px);
+        }
+
+        .menu-link {
+            color: #8f8c8c;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .menu-link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 0;
+            height: 2px;
+            background: #007bff;
+            transition: width 0.3s ease;
+        }
+
+        .menu-link:hover::after {
+            width: 100%;
+        }
+
+        .menu-link:hover {
+            transform: scale(1.1);
+            color: #007bff;
+            text-shadow: 0 0 8px #007bff;
+        }
+
+        @media (max-width: 768px) {
+            .banner-column {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .banner-animation {
+                order: 1;
+                margin-top: 20px;
+            }
+
+            .banner-text {
+                order: 2;
+            }
+
+            .heading-lg {
+                margin-top: 50px;
+            }
+        }
+        
+    </style>
+    
+</head>
+<body>
+
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="infancy.html" class="brand">
+                <span style="display: flex; align-items: center;">
+                    <img src="assets/favicon.ico" alt="CarePlus Logo" style="width: 24px; height: 24px; margin-right: 8px;" />
+                    CarePlus
+                </span>
+            </a>
+    
+            <div class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+            <div class="menu" id="menu">
+                <ul class="menu-inner">
+                    <li class="menu-item"><a href="infancy.html" class="menu-link">Go Back</a></li>
+                </ul>
+            </div>
+            <a href="https://careplusdoctor.vercel.app/" class="menu-block">Appointment</a>
+        </nav>
+    </header>
+
+    <section class="section banner banner-section">
+        <div class="bg-dark text-light p-3">
+            <div class="container text-center">
+                <h1 class="display-4">Cognitive Development During Infancy</h1>
+                <p class="lead">Exploring the milestones of cognitive growth in infants and how they begin to understand their world.</p>
+            </div>
+        </div>
+     </section>
+
+    <main class="py-4">
+        <div class="container">
+            <section class="mb-5">
+                <h2 class="text-primary">Introduction</h2>
+                <p>Cognitive development in infancy refers to the growth of an infant's ability to think, learn, and process information. During the first two years, babies rapidly develop basic cognitive skills that lay the foundation for more complex thinking in later childhood and beyond.</p>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="text-primary">Key Cognitive Milestones</h2>
+                <table class=" bg-dark table table-striped table-bordered">
+                    <thead class="table-dark bg-dark">
+                        <tr>
+                            <th>Cognitive Milestone</th>
+                            <th>Explanation</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-dark">
+                        <tr>
+                            <td>Object Permanence</td>
+                            <td>By 8-12 months, infants understand that objects continue to exist even when they are out of sight.</td>
+                        </tr>
+                        <tr>
+                            <td>Imitation</td>
+                            <td>By 6 months, infants begin imitating simple actions, such as waving or clapping, learning through observation.</td>
+                        </tr>
+                        <tr>
+                            <td>Problem Solving</td>
+                            <td>Infants begin solving simple problems, like figuring out how to reach a toy or how to get attention from caregivers.</td>
+                        </tr>
+                        <tr>
+                            <td>Memory Development</td>
+                            <td>Memory skills start to develop as infants recall familiar people and objects, and recognize faces and voices.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="text-primary">Cognitive Development Theories</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-group">
+                            <li class="list-group-item bg-dark">Piaget’s Sensorimotor Stage: Infants learn about the world through sensory experiences and motor actions. Object permanence is a key milestone of this stage.</li>
+                            <li class="list-group-item bg-dark">Vygotsky’s Social Interaction Theory: Emphasizes the role of social interaction in cognitive development, where caregivers provide the "scaffolding" for learning.</li>
+                            <li class="list-group-item bg-dark">Information Processing Theory: Focuses on how infants process, store, and recall information, helping them to improve their cognitive skills as they grow.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="text-primary">Supporting Cognitive Growth</h2>
+                <p>Caregivers play a critical role in fostering cognitive development by providing stimulating environments and engaging with infants. Here are some ways to support cognitive growth:</p>
+                <ul>
+                    <li>Engage in back-and-forth interactions, such as talking, singing, or making eye contact with the baby.</li>
+                    <li>Provide safe, age-appropriate toys that encourage exploration and problem solving, like stacking blocks or shape sorters.</li>
+                    <li>Read to your baby regularly to build language skills and enhance memory and recognition.</li>
+                    <li>Offer experiences that stimulate the senses, like different textures, sounds, and visual stimuli.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="text-primary">Cognitive Development in Context</h2>
+                <p>Cognitive milestones are not only influenced by genetics but also by environmental factors. A supportive and enriching environment can help infants reach their cognitive potential more effectively. Responsive caregiving, where infants’ needs are met with timely and appropriate responses, supports cognitive growth by allowing infants to feel secure and engaged.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-light py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 CarePlus. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

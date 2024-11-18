@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adolescence Awareness</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- DotLottie Player -->
+        <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+        <link rel="stylesheet" href="css/styles.css" />
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        .banner-column {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .banner-text {
+            flex: 1;
+            order: 1;
+        }
+
+        .banner-animation {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            order: 2;
+        }
+
+        .banner-animation dotlottie-player {
+            max-width: 100%;
+            height: auto;
+        }
+
+
+
+        .banner-animation.pc {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            transform: translateX(40px);
+            /* Adjust this value as needed */
+        }
+
+
+        .menu-link {
+            color: #8f8c8c;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .menu-link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 0;
+            height: 2px;
+            background: #007bff;
+            transition: width 0.3s ease;
+        }
+
+        .menu-link:hover::after {
+            width: 100%;
+            /* Underline expands */
+        }
+
+        .menu-link:hover {
+            transform: scale(1.1);
+            /* Slightly increase the size */
+            color: #007bff;
+            text-shadow: 0 0 8px #007bff;
+
+        }
+
+
+        /* Responsive layout for Mobile */
+        @media (max-width: 768px) {
+            .banner-column {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .banner-animation {
+                order: 1;
+                margin-top: 20px;
+            }
+
+            .banner-text {
+                order: 2;
+                /* Move text after animation */
+            }
+
+            .heading-lg {
+                margin-top: 50px;
+            }
+
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            border: black 2px;
+            transition: transform 0.3s ease, border 0.3s ease;
+            border-radius: 2px;
+            /* Smooth transition for both transform and border */
+
+        }
+
+        .card:hover {
+            transform: scale(1.5);
+            /* Slightly increase the size */
+            border: 3px solid #2a336c;
+            /* Add a solid blue border */
+        }
+
+        .card:hover .btn {
+            color: #ffffff;
+
+            background-color: #2a336c
+        }
+
+        .card:hover .card-title {
+            color: #007bff;
+        }
+
+        .card:hover .card-text {
+            color: #007bff;
+        }
+
+        .card-img-top {
+            order: 1;
+
+            /* Ensures the image comes first */
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            order: 2;
+            background-color: black;
+            /* Ensures the body comes after the image */
+        }
+
+        .card-title {
+            order: 1;
+            text-align: center;
+
+
+            /* Title comes after the image */
+        }
+
+        .card-text {
+            order: 2;
+            text-align: justify;
+
+            /* Text comes after the title */
+        }
+
+        .card .btn {
+            order: 3;
+            background-color: white;
+            /* Button comes last */
+        }
+
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .alvi{
+            color:#007bff;
+        }
+    </style>
+</head>
+
+<body>
+
+        <!-- Header Section -->
+        <header class="header" id="header">
+            <nav class="navbar container">
+                <a href="index.html" class="brand">
+                    <span style="display: flex; align-items: center;">
+                        <img src="assets/favicon.ico" alt="CarePlus Logo"
+                            style="width: 24px; height: 24px; margin-right: 8px;" />
+                        CarePlus
+                    </span>
+                </a>
+    
+                <div class="burger" id="burger">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </div>
+                <div class="menu" id="menu">
+                    <ul class="menu-inner">
+                        <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
+                        <li class="menu-item"><a href="#knowledge" class="menu-link">Knowledge</a></li>
+                    </ul>
+                </div>
+                <a href="https://careplusdoctor.vercel.app/" class="menu-block">Appointment</a>
+            </nav>
+        </header>
+
+<!-- Main Section -->
+<main class="main" id="home">
+    <!-- Banner Section -->
+    <section class="section banner banner-section">
+        <div class="container banner-column">
+            <!-- Lottie Animation -->
+            <div class="banner-animation">
+                <dotlottie-player src="https://lottie.host/95aa97c5-e0af-4e83-bed9-209c18832673/gX0po9dWk4.json"
+                    background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
+                </dotlottie-player>
+            </div>
+            <!-- Text Content -->
+            <div class="banner-text">
+                <h1 class="heading-xl">Understanding Adolescence</h1>
+                <p class="paragraph">
+                    Adolescence marks the transition from childhood to adulthood, characterized by profound physical, emotional, and social changes. This stage requires understanding, support, and proper guidance to navigate the complexities of growing up.
+                </p>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+    <!--This part is for knowlege-->
+    <div class="container my-5" id="knowledge">
+        <h1 class="text-center mb-4 alvi">Adolescence: Transformations and Challenges</h1>
+
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="assets/psychological.jpg" class="card-img-top" alt="Psychological Effects">
+                    <div class="card-body">
+                        <h5 class="card-title">Physical Changes</h5>
+                        <p class="card-text">Understand the puberty-driven transformations and how they affect the body and health.
+                        </p>
+                        <a href="Adolescence-card1.html" class="btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="assets/physical.jpg" class="card-img-top" alt="Physical Effects">
+                    <div class="card-body">
+                        <h5 class="card-title">Emotional Development</h5>
+                        <p class="card-text">Explore the emotional growth and struggles typical of adolescence, including identity exploration and mood swings.</p>
+                        <a href="Adolescence-card2.html" class="btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="assets/mental_health.jpg" class="card-img-top" alt="Mental Health">
+                    <div class="card-body">
+                        <h5 class="card-title">Social Pressures and Peer Influence</h5>
+                        <p class="card-text">Learn about the influence of peer groups, societal expectations, and the pursuit of independence.</p>
+                        <a href="Adolescence-card3.html" class="btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="assets/diseases.jpg" class="card-img-top" alt="Diseases & Taboos">
+                    <div class="card-body">
+                        <h5 class="card-title">Health Risks and Coping Strategies</h5>
+                        <p class="card-text">Identify the common health issues during adolescence, such as stress, anxiety, and how to manage them effectively.</p>
+                        <a href="Adolescence-card4.html" class="btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
