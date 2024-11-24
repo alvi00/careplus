@@ -597,3 +597,501 @@ video {
     margin-top: 30px;
     font-size: 0.8rem;
 }
+
+
+
+/*This is doctor part I am not sure it will work or not*/
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .search-box {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    padding: 10px;
+    background-color: #2a336c; /* Light grey background */
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 600px; /* Increased width to take more horizontal space */
+    max-width: 1200px; /* Maximum width for larger screens */
+  }
+  
+  input[type="text"] {
+    width: 100%; /* Full width */
+    padding: 15px; /* Increased padding */
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    background-color: #ADBBDA; /* Slightly darker grey */
+    color: #333; /* Dark text color */
+    font-size: 16px; /* Larger font size */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  input[type="text"]:focus {
+    background-color: #fff; /* White background on focus */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  #doctorList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  /* Base styles for the doctor card */
+  .doctor-card {
+    background-color: #2a336c; /* Deep purple background */
+    color: white; /* White text color for contrast */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px; /* Spacing inside the card */
+    width: 100%; /* Full width to fit container */
+    max-width: 350px; /* Maximum width for large screens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 10px auto; /* Centering and spacing between cards */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions for hover effects */
+  }
+  
+  /* Hover effect to elevate the card */
+  .doctor-card:hover {
+    transform: translateY(-10px); /* Move up slightly */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow for emphasis */
+  }
+  
+  /* Layout for the upper part of the card */
+  .doctor-upper-part {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Space between sections */
+  }
+  
+  /* Styling for the doctor's photo */
+  .doctor-photo {
+    border-radius: 50%; /* Circular photo */
+    width: 60px; /* Fixed size */
+    height: 60px; /* Fixed size */
+  }
+  
+  /* Flex container for doctor info to fill available space */
+  .doctor-info {
+    flex-grow: 1;
+    margin-left: 15px; /* Space from photo */
+  }
+  
+  /* Container for call icons */
+  .doctor-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Space between icons */
+  }
+  
+  .doctor-icons .fa-video{
+    background-color: rgba(255, 255, 255, 0.237); /* Sets the background color to white */
+    border-radius: 50%; /* Makes the background round */
+    box-sizing: border-box; /* Ensures padding is included in width/height */
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .doctor-icons .fa-phone{
+    background-color: rgba(255, 255, 255, 0.237); /* Sets the background color to white */
+    border-radius: 50%; /* Makes the background round */
+    box-sizing: border-box; /* Ensures padding is included in width/height */
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .location .fa-location-dot{
+    background-color: rgba(255, 255, 255, 0.237); /* Sets the background color to white */
+    border-radius: 50%; /* Makes the background round */
+    box-sizing: border-box; /* Ensures padding is included in width/height */
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .location p{
+    padding-top: 13px;
+  }
+  
+  .availability p{
+    padding-top: 13px;
+  }
+  
+  .availability .fa-clock{
+    background-color: rgba(255, 255, 255, 0.237); /* Sets the background color to white */
+    border-radius: 50%; /* Makes the background round */
+    box-sizing: border-box; /* Ensures padding is included in width/height */
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  
+  /* Middle part of the card for location and availability */
+  .doctor-middle-part::before {
+    content: "";
+    display: block;
+    height: 1px; /* Thin line */
+    background-color: white; /* White line */
+    margin: 10px 0; /* Space above and below the line */
+  }
+  
+  /* Flexbox for location and availability for alignment */
+  .location, .availability {
+    display: flex;
+    align-items: center;
+  }
+  
+  .location a {
+    color: inherit; /* Inherits the color from the parent element */
+    text-decoration: none; /* Removes underline */
+  }
+  
+  .location a:hover, .location a:focus {
+    text-decoration: underline; /* Adds underline on hover for better user interaction */
+  }
+  
+  /* Icon styling */
+   .fa-solid {
+    width: 20px; /* Small icon size */
+    height: 20px; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space before text */
+  }
+  
+  /* Container for available time slots */
+  .time-slots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between slots */
+    padding-top: 10px;
+  }
+  
+  /* Styling for individual time slots */
+  .time-slot {
+    background-color:rgba(255, 255, 255, 0.237);  /* Contrast with card */
+    color: whitesmoke; /* Theme color */
+    border-radius: 10px; /* Rounded edges */
+    padding: 5px 10px; /* Padding for touch targets */
+    font-size: 12px; /* Readable text size */
+    cursor: pointer; /* Indicates clickability */
+    transition: background-color 0.3s, color 0.3s; /* Smooth color transition on hover */
+  }
+  
+  /* Hover effect for time slots */
+  .time-slot:hover {
+    background-color: #e0e0e0; /* Light grey background on hover */
+    color: #6a0dad; /* Maintain theme color text */
+  }
+  
+  /* Lower part of the card for action button */
+  .doctor-lower-part {
+    text-align: center; /* Center-align the button */
+    margin-top: 20px; /* Space above the button */
+    padding-bottom: 10px; /* Space below the button inside the card */
+  
+  }
+  .doctor-item {
+    list-style-type: none; /* Removes the bullet points */
+  }
+  /* Styling for the appointment button */
+  button {
+    background-color:rgba(255, 255, 255, 0.409); /* Contrast with card */
+    color: whitesmoke; /* Theme color */
+    border: none; /* No border */
+    border-radius: 20px; /* Rounded edges */
+    padding: 10px 20px; /* Comfortable padding */
+    cursor: pointer; /* Indicates clickability */
+    font-size: 16px; /* Readable text size */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  button:hover {
+    background-color: #e0e0e0; /* Light grey background on hover */
+    color: #6a0dad; /* Maintain theme color text */
+  }
+  /* Modal Styles */
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+    animation: fadeIn 0.5s;
+  }
+  
+  .modal-content {
+    background-color: #2a336c;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 10px;
+    animation: slideIn 0.5s;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes slideIn {
+    from {transform: translateY(-50px);} 
+    to {transform: translateY(0);}
+  }
+  
+  .sparkles {
+    background: url('/Success-Micro-interaction-unscreen.gif') no-repeat center center;
+    background-size: contain;
+    height: 200px; /* Increased size */
+    width: 200px; /* Increased size */
+    margin: 20px auto;
+  }
+  
+  .fa-phone-alt {
+    margin-right: 5px;
+  }
+  
+  .divider {
+    height: 1px;
+    background-color: #ddd;
+    margin: 10px 0;
+  }
+  .footer {
+    position: absolute;
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 16px;
+    width: 100%; /* Ensures the footer takes full width */
+    backdrop-filter: blur(5px);
+    margin-left: -50px;
+    height: auto;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-links {
+    margin-top: 10px;
+  }
+  
+  .footer-links a {
+    color: #f8f9fa;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      padding: 10px 0; /* Reduce padding on smaller screens */
+      font-size: 14px; /* Smaller font size on smaller screens */
+      margin-left: 0px;
+    }
+  
+    .footer-links a {
+      margin: 0 10px; /* Reduce margin between links on smaller screens */
+      font-size: 12px; /* Smaller font size for links on smaller screens */
+    }
+  }
+  @media (max-width: 768px) {
+    .container {
+      width: 100%; /* Full width on smaller screens */
+    }
+    input[type="text"] {
+      width: 100%; /* Full width on smaller screens */
+    }
+  
+  
+  
+  @media (max-width: 768px) {
+    .search-box {
+      flex-direction: column; /* Stack elements vertically on smaller screens */
+      margin: 10px 0;
+    }
+  
+    button {
+      width: 100%; /* Full width for buttons on smaller screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .doctor-item {
+      width: 100%; /* Full width on smaller screens */
+      margin-bottom: 10px; /* Reduced margin */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .modal-content {
+      width: 90%; /* More width on smaller screens */
+      margin: 10% auto; /* Adjusted margin for visibility */
+      position: absolute;
+      top:200px;
+      left: 20px;
+  
+    }
+  }
+  
+  @media (max-width: 768px) {
+    h1, h3 {
+      font-size: 18px; /* Smaller font size on smaller screens */
+    }
+    body{
+      padding: 0 0;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    header {
+        padding: 0px 0px; /* Reduce padding for smaller screens */
+        margin-right: 5px;
+    }
+  
+    .logo {
+        font-size: 1.5em; /* Adjust logo size for smaller screens */
+        margin-left: 5px;
+    }
+  
+    .navigation a {
+        font-size: 0.9em; /* Reduce font size for navigation links */
+        margin-right: 15px; /* Reduce margin between links */
+        padding: 5px 10px; /* Adjust padding for better touch targets */
+    }
+  
+  
+  }
+  @media (max-width: 768px) {
+  
+  
+  
+    .search-box {
+      margin-left: 15px;
+      padding: 10px;
+      width: 90%;
+    }
+    .doctors-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+      padding: 20px;
+  }
+  }
+  @media (max-width: 768px) {
+    .doctor-card {
+        padding: 15px; /* Smaller padding on smaller screens */
+        margin: 5px; /* Smaller margin to fit smaller screens */
+    }
+  
+    .doctor-photo {
+        width: 50px; /* Smaller photo on smaller screens */
+        height: 50px; /* Smaller photo on smaller screens */
+    }
+  
+    .time-slot {
+        padding: 3px 6px; /* Smaller padding in time slots */
+        font-size: 10px; /* Smaller font size for time slots */
+    }
+  
+    button {
+        padding: 8px 16px; /* Smaller padding for button */
+        font-size: 14px; /* Smaller font size for button */
+    }
+  }
+  }
+  
+  @media (max-width: 768px) {
+    .landing-page {
+      flex-direction: column; /* Stack elements vertically on smaller screens */
+      text-align: center; /* Center-align text on smaller screens */
+    }
+  
+    .left-content, .right-content {
+      min-width: 100%; /* Full width on smaller screens */
+    }
+  
+    .left-content h1 {
+      font-size: 28px; /* Adjust size for smaller screens */
+      padding-left: 0px;
+    }
+  
+    .left-content p {
+      font-size: 16px; /* Adjust size for smaller screens */
+    }
+  
+    .read-more-btn {
+      font-size: 14px; /* Adjust size for smaller screens */
+      padding: 10px 20px;
+    }
+  
+    .landing-animation {
+      width: 100%; /* Full width on smaller screens */
+    }
+    .read-more-btn {
+      display: block; /* Makes the button a block element */
+      margin: 0 auto; /* Centers the button horizontally */
+      width: fit-content; /* Ensures the button width is as per its content */
+    }
+  }
+
+
+
+  
